@@ -334,13 +334,14 @@ textarea {
 .header .w-container {
   overflow: visible !important;
 }
-/* ==========================================================================
-   NAVIGATION EXACT BASELINE ALIGNMENT
+/* NAVIGATION EXACT BASELINE ALIGNMENT
    Ensures 'All Pages' and all nav-links sit on the exact same horizontal baseline
    ========================================================================== */
+@media (min-width: 992px) {
 .nav-menu {
-  display: flex !important;
+  display: flex;
   align-items: center !important;
+}
 }
 
 .dropdoen-menu {
@@ -391,4 +392,176 @@ textarea {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
   padding: 0 !important;
+}
+/* Assignment improvements */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+.navbar-black {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .navbar-black {
+    background: #111827;
+  }
+
+  .brand-logo {
+    max-width: 65%;
+  }
+
+  .menu-button {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+
+/* Sponsor Advertisement Banner */
+.sponsor-banner {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 35px 20px;
+  background: linear-gradient(135deg, #e8f1ff, #f5f8ff);
+  border: 1px solid #d5e3f7;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.sponsor-content {
+  max-width: 700px;
+  margin: auto;
+}
+
+.sponsor-label {
+  display: inline-block;
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #64748b;
+  margin-bottom: 12px;
+}
+
+.sponsor-banner h2 {
+  font-size: 28px;
+  color: #111827;
+  margin-bottom: 10px;
+}
+
+.sponsor-banner p {
+  color: #64748b;
+  margin-bottom: 20px;
+}
+
+.sponsor-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #2563eb;
+  color: white !important;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.sponsor-button:hover {
+  background: #1d4ed8;
+}
+
+@media (max-width: 767px) {
+  .sponsor-banner {
+    margin: 20px 15px;
+    padding: 25px 15px;
+  }
+
+  .sponsor-banner h2 {
+    font-size: 22px;
+  }
+}
+
+/* Regional news date */
+.regional-news-date {
+  font-size: 12px;
+  color: #64748b;
+  margin: 8px 0;
+  font-weight: 500;
+}
+
+
+/* NewsToday official NT logo */
+.project-logo-image {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  vertical-align: middle;
+}
+@media (max-width: 767px) {
+  .project-logo-image {
+    width: 42px;
+    height: 42px;
+  }
+}
+
+/* Regional News Section */
+.regional-news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 25px;
+}
+
+.regional-news-card {
+  min-width: 0;
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.regional-news-card img {
+  width: 100%;
+  aspect-ratio: 16/10;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.regional-category {
+  display: inline-block;
+  margin-top: 12px;
+  color: #2563eb;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.regional-news-card h3 {
+  font-size: 20px;
+  line-height: 1.4;
+  margin: 8px 0;
+}
+
+.regional-news-card p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.regional-news-card a {
+  display: inline-block;
+  margin-top: 8px;
+  color: #2563eb;
+  font-weight: 600;
+}
+
+@media (max-width: 767px) {
+  .regional-news-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .regional-news-card h3 {
+    font-size: 18px;
+  }
 }

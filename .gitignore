@@ -14,3 +14,11 @@ Thumbs.db
 *.log
 scratch/
 assets/js/extracted_strings.txt
+
+# NewsToday Local Backup Files
+*.backup
+*.before-final-fix
+*.conflict-backup
+*.pre-merge-backup
+NewsToday-project.zip
+*.backup-*
